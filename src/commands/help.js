@@ -2,7 +2,8 @@
 
 exports.run = (client, message, args, profile) => {
 
-    const help = `?catch <user> <reason>
+    const help = `
+    ?catch <user> <reason>
     ?trade <item> <user>
     ?craft
     ?inventory
@@ -18,7 +19,8 @@ exports.run = (client, message, args, profile) => {
     ?arrest <user>
     ?getjob
     ?study
-    ?exercise`;
+    ?exercise
+    `;
 
     message.channel.send(help);
 }

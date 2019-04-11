@@ -27,7 +27,9 @@ const StrUtil = {
 }
 
 const ClassUtil = {
-    isClass: (object) => { return object instanceof Structures.item && ItemIndex.meta[object.id]; }
+
+    isClass: (object) => { return (object instanceof Classes.corporal || object instanceof Classes.prisoner || object instanceof Classes.warden) }
+
 }
 
 module.exports = { ItemUtil, ItemIndex, Structures, Classes, Responses, StrUtil, ClassUtil };
